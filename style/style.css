@@ -12,11 +12,14 @@ h3,
 h4 {
   font-family: "Playfair Display", serif;
 }
+p {
+  font-family: "Raleway", sans-serif;
+}
 
 .hero {
   background: var(--background-header);
-  text-align: center;
   padding: 160px;
+  text-align: center;
 }
 
 .hero h2 {
@@ -29,4 +32,23 @@ h4 {
   border: none;
   padding: 30px 20px;
   font-weight: bold;
+}
+.project-description {
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .hero {
+    text-align: center;
+    padding: 40px;
+  }
 }
