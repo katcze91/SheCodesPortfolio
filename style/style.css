@@ -3,6 +3,22 @@
   --background-header: #dfeff0;
 }
 
+.first-color {
+  background: #c2faf1;
+}
+
+.second-color {
+  background: #f6f6f6;
+}
+
+.third-color {
+  background: #dfeff0;
+}
+
+.fourth-color {
+  background: #295e6a;
+}
+
 h1 {
   font-size: 65px;
   font-family: "Merriweather", serif;
@@ -37,6 +53,17 @@ p {
   padding: 10px;
   text-align: center;
 }
+.about-section {
+  padding: 120px;
+}
+
+.about-section h1 {
+  font-size: 50px;
+}
+
+.about-section h2 {
+  font-size: 30px;
+}
 @media (max-width: 560px) {
   h1 {
     font-size: 35px;
@@ -50,5 +77,21 @@ p {
   .hero {
     text-align: center;
     padding: 40px;
+  }
+  .about-section {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .about-section h1 {
+    font-size: 35px;
+  }
+  .about-section h2 {
+    font-size: 20px;
+  }
+  .about-section p {
+    padding: 5px;
+    font-size: 15px;
   }
 }
