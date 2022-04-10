@@ -33,7 +33,31 @@ h4 {
 p {
   font-family: "Raleway", sans-serif;
 }
-
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  line-height: 40px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: #4ba4aa;
+}
+.logo {
+  max-width: 150px;
+}
 .hero {
   background: var(--background-header);
   padding: 160px;
