@@ -1,22 +1,6 @@
 :root {
-  --button-color: #13f0cb;
+  --button-color: #295f6b;
   --background-header: #dfeff0;
-}
-
-.first-color {
-  background: #c2faf1;
-}
-
-.second-color {
-  background: #f6f6f6;
-}
-
-.third-color {
-  background: #dfeff0;
-}
-
-.fourth-color {
-  background: #295e6a;
 }
 
 h1 {
@@ -29,6 +13,9 @@ h3,
 h4 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
+}
+h4 {
+  font-size: 40px;
 }
 p {
   font-family: "Raleway", sans-serif;
@@ -55,6 +42,30 @@ nav a:hover,
 nav li.active a {
   color: #4ba4aa;
 }
+
+footer {
+  margin: 50px 0;
+}
+footer .contact-box {
+  background-color: var(--background-header);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+footer .email-link {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  transition: 150ms;
+}
+
+footer .email-link:hover {
+  color: var(--button-color);
+  font-size: 28px;
+}
 .logo {
   max-width: 150px;
 }
@@ -70,10 +81,14 @@ nav li.active a {
 
 .btn-primary {
   background: var(--button-color);
-  border-radius: 4px;
+  border-radius: 10px;
   border: none;
-  padding: 30px 20px;
+  padding: 20px 20px;
   font-weight: bold;
+}
+.btn-primary:hover {
+  background: #0e4552;
+  color: white;
 }
 .project-description {
   padding: 10px;
@@ -90,6 +105,23 @@ nav li.active a {
 .content h2 {
   font-size: 30px;
 }
+
+.social-media a {
+  text-decoration: none;
+  font-size: 30px;
+
+  text-align: justify;
+  margin: 0 20px;
+  color: var(--button-color);
+  background: #d6eaee;
+  padding: 10px 18px;
+  border-radius: 50%;
+  transition: 150ms;
+}
+.social-media a:hover {
+  color: #d6eaee;
+  background: var(--button-color);
+}
 @media (max-width: 560px) {
   h1 {
     font-size: 35px;
@@ -99,6 +131,9 @@ nav li.active a {
   }
   h3 {
     font-size: 19px;
+  }
+  h4 {
+    font-size: 20px;
   }
   .hero {
     text-align: center;
@@ -119,5 +154,16 @@ nav li.active a {
   .content p {
     padding: 5px;
     font-size: 15px;
+  }
+  .btn-primary {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .social-media a {
+    font-size: 20px;
+  }
+  footer .contact-box {
+    padding: 20px;
   }
 }
